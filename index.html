@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+        <title>收作业困难症解决方案</title>
+        <style>
+        button {transform: translate(-50%,0);position: relative;left: 50%;}
+        </style>
+    </head> 
+    <body> 
+        <h3>万事皆有可能，下一个就是你那一组(doge)</h3>
+        <br>
+        <div class="container">
+        <button onclick="result()" class="btn btn-primary outline-primary btn-lg text-white">抽奖</button>
+        </div>
+        <br>
+        <h2 id="result"></h2>
+        <br>
+        <div class="container-sm">
+        <div class="alert-warning">
+        <strong>本代码开源，如有疑问可询问作者</strong>
+        </div>
+        </div>
+        <script>
+        var min = 1;
+        var max = 3;
+        
+     /*   function change() {
+          Newmin = parseInt(prompt("输入最小值: "));
+          Newmax = parseInt(prompt("输入最大值: "));
+            } */
+       // alert(Newmin,Newmax);
+        function math(min,max){return Math.floor(Math.random() * (max - min + 1)) + min;}
+        
+        function result() {document.getElementById('result').innerHTML='本期幸运儿为'+math(1,3)+'组';}
+        </script>
+    </body>
+</html>
